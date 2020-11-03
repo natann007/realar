@@ -5,7 +5,7 @@ react with laravel application
 clicks.js:
 put this file into publick/js folder in your laravel project,
 in blade where you want use clicks.js you must add:
-'<meta id="csrf" name="csrf" content="{{csrf_token()}}">'
+/meta id="csrf" name="csrf" content="{{csrf_token()}}"/
  and 
 '<script src="{{asset('js/clicks.js')}}"></script>',
 code of this file send to server:

@@ -35,3 +35,10 @@ web.php:
 put this file into routes/ - folder
 
 
+welcome.blade.php: 
+put this file into resources/views/ - folder,
+it is the general view of the project (home-page) and if you are click on this page,
+your clicks will saved in database,
+for look your clicks press the link - "GO TO USER CLICKS PAGE"
+
+

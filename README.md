@@ -3,7 +3,7 @@ react with laravel application
 
 
 clicks.js: 
-put this file into publick/js/ folder in your laravel project,
+put this file into publick/js/ - folder, in your laravel project,
 in blade where you want use clicks.js you must add:
 /meta id="csrf" name="csrf" content="{{csrf_token()}}"/
  and 
@@ -15,17 +15,23 @@ code of this file send to server:
 
 
 Click.js: 
-put this file into resources/js/components/
+put this file into resources/js/components/ - folder
 and in resources/js/app.js add: require('./components/Click'),
 it is React Component which receive from blade where he included data and build table of clicks,
 in laravel-blade must be: /div/ id="clicks" class="mt-5" data="{{ $data }}"></div/ for use this Component
 
 
 app.js: 
-put this file into resources/js/
+put this file into resources/js/ - folder
+
 
 ClickController.php: 
-put into app/Http/Controllers/,
+put into app/Http/Controllers/ - folder,
 this class extends Controller and has 2 own methodes: 
 postClick(Request $req) - which insert data to database-table 'clicks' 
 and userClicks() - which send array of data from table 'clicks' to view - clicks.blade.php
+
+web.php: 
+put this file into routes/ - folder
+
+

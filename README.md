@@ -2,11 +2,20 @@
 react with laravel application
 
 
-CLICKS.JS:
+clicks.js:
 put this file into publick/js folder in your laravel project,
-in blade where you want use it add:
+in blade where you want use clicks.js you must add:
+'<meta id="csrf" name="csrf" content="{{csrf_token()}}">'
+ and 
 '<script src="{{asset('js/clicks.js')}}"></script>',
 code of this file send to server:
   page-url of page where user click,
   tag-name of html-element which was clicked,
   x and y - coordinates of the click
+
+
+Click.js
+put this file into resources/js/components
+and in resources/js/app.js add: require('./components/Click'),
+it is React Component which receive from blade where he included data and build table of clicks,
+in laravel-blade must be: '<div id="clicks" class="mt-5" data="{{ $data }}"></div>' for use this Component

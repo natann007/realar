@@ -18,4 +18,4 @@ Click.js
 put this file into resources/js/components
 and in resources/js/app.js add: require('./components/Click'),
 it is React Component which receive from blade where he included data and build table of clicks,
-in laravel-blade must be: //<div id="clicks" class="mt-5" data="{{ $data }}"></div>// for use this Component
+in laravel-blade must be: /div/ id="clicks" class="mt-5" data="{{ $data }}"></div/ for use this Component

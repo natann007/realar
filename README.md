@@ -3,7 +3,7 @@ react with laravel application
 
 
 clicks.js: 
-put this file into publick/js/ - folder, in your laravel project,
+put this file into public/js/ - folder, in your laravel project,
 in blade where you want use clicks.js you must add:
 /meta id="csrf" name="csrf" content="{{csrf_token()}}"/
  and 
@@ -49,7 +49,7 @@ this view represents to user (or admin) the statistic of his clicks in the home-
 
 INSTRUCTION TO USE: 
 (1)  Create new laravel project 
-(2)  Put clicks.js into publick/js/ - folder 
+(2)  Put clicks.js into public/js/ - folder 
 (3)  Put welcome.blade.php into resources/views/ - folder 
 (4)  Put clicks.blade.php into resources/views/ - folder 
 (5)  Put ClickController.php into app/Http/Controllers/ - folder
